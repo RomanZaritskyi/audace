@@ -1,0 +1,124 @@
+.footer {
+  background-color: #013757;
+  color: #fff;
+  &__inner {
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  // logo
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 55px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      img {
+        margin-right: 20px;
+      }
+    }
+    h6 {
+      font-family: "Open-Sans-italic";
+      font-weight: 100;
+      width: 200px;
+    }
+
+    p {
+      width: 260px;
+      margin-bottom: 30px;
+      line-height: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  // end logo
+
+  // start nav
+  &__nav {
+    display: flex;
+    font-size: 18px;
+    padding: 0px 15px;
+    @media (max-width: 1250px) {
+      flex-direction: column;
+    }
+  }
+  &__nav-list {
+    margin-right: 105px;
+    @media (max-width: 1250px) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 1024px) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+    a {
+      color: #fff;
+    }
+  }
+  &__nav-item {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  font-size: 18px;
+  @media (max-width: 1520px) {
+    flex-direction: column;
+  }
+
+  .footer__contacts-list {
+    margin-right: 70px;
+  }
+  .footer__contacts-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+}
+.footer-icon {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  margin-right: 12px;
+  background-image: url("../images/footer/footer-phone.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__location-list {
+  max-width: 295px;
+  font-size: 20px;
+  .footer__location-item {
+    margin-bottom: 20px;
+    display: flex;
+    .mail {
+      background-image: url("../images/footer/footer-mail.svg");
+    }
+    .point {
+      background-image: url("../images/footer/footer-gps.svg");
+      padding-right: 20px;
+    }
+    a {
+      color: #fff;
+    }
+  }
+}

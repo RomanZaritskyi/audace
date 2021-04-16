@@ -22,4 +22,16 @@ body {
 	max-width: 1770px;
 	margin: 0 auto;
 	padding: 0 15px;
+	@media (max-width: 1520px) {
+		max-width: 1250px;
+	}
+	@media (max-width: 1250px) {
+		max-width: 1024px;
+	}
+	@media (max-width: 1024px) {
+		max-width: 768px;
+	}
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 }
