@@ -5,6 +5,7 @@
 @import "global";
 
 @import "footer";
+@import "main";
 
 .header {
   padding: 15px 0px;
@@ -384,5 +385,79 @@
     height: 8px;
     background-image: url("../images/header/down-arrow.svg");
     background-repeat: no-repeat;
+  }
+}
+
+.sum {
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__common-btn {
+    padding: 13px;
+    border: 2px solid $accentColor;
+    border-radius: 5px;
+    margin-right: 20px;
+    span {
+      font-weight: 900;
+    }
+  }
+  &__add-btn {
+    background-color: $accentColor;
+    padding: 13px;
+    color: 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 99, 158, 0.9);
+    }
+  }
+}
+
+// main
+
+.aside {
+  .aside__nav {
+    margin-bottom: 30px;
+  }
+  .aside__nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.aside__nav-list-item {
+  margin-bottom: 20px;
+  &:last-child {
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    width: 195px;
+    height: 50px;
+    line-height: 47px;
+    border: 2px solid $accentColor;
+    text-align: center;
+    border-radius: 5px;
+    color: #000;
+    transition: all 0.1s linear;
+    &:hover {
+      background-color: $accentColor;
+      color: #fff;
+    }
+  }
+}
+
+// carusel
+.carusel {
+  display: flex;
+  flex-direction: column;
+  .photo {
+    width: 196px;
+    img {
+      width: 100%;
+    }
   }
 }
