@@ -268,8 +268,10 @@
     justify-content: flex-start;
     padding-right: 10px;
     margin-right: 115px;
-    @media (max-width: 1520px) {
+    @media (max-width: 1670px) {
       margin-bottom: 30px;
+      justify-content: center;
+      margin-right: 0px;
     }
   }
   &__lists-wrapper {
@@ -456,9 +458,6 @@
 .content {
   width: 85%;
   margin-bottom: 140px;
-  @media (max-width: 767px) {
-    width: 700px;
-  }
 
   &__title {
     background-color: #f0f4f7;
@@ -566,6 +565,9 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  @media (max-width: 767px) {
+    width: 580px;
+  }
 }
 .parameters__wrapper {
   display: flex;
